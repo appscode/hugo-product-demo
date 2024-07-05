@@ -15,21 +15,21 @@ git submodule add git@github.com:appscode/hugo-product-theme.git themes/hugo-pro
 
 Replace hugo.toml file to [config.yaml](https://github.com/appscode/hugo-product-demo/blob/master/config.yaml) and update necessary data
 
-Then, Add [Makefile](https://github.com/appscode/hugo-product-demo/blob/master/Makefile), [Data/](https://github.com/appscode/hugo-product-demo/blob/master/data/config.json) in root directory
+Then, Add [Makefile](https://github.com/appscode/hugo-product-demo/blob/master/Makefile), [data/config.json](https://github.com/appscode/hugo-product-demo/blob/master/data/config.json) in root directory
 
-Then, Run this command,
+Run this command,
 ```sh
 make assets
 ```
-After successfully run this command add
+After successfully run this command, please install `postcss-cli`
 ```sh
 npm install postcss-cli
 ```
-Finally,
+Run hugo server,
 ```sh
 hugo server
 ```
 
-If you want demo content please download those content also [content](https://github.com/appscode/hugo-product-demo/tree/master/content)
+If you want demo content, please download those content also [content](https://github.com/appscode/hugo-product-demo/tree/master/content)
 
 View your site at the URL displayed in your terminal. Press Ctrl + C to stop Hugo’s development server.
